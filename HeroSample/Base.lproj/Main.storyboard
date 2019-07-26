@@ -39,18 +39,18 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZw-oP-co5">
-                                <rect key="frame" x="20" y="829" width="374" height="33"/>
+                                <rect key="frame" x="87" y="829" width="240" height="33"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="XZw-oP-co5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="11t-Kz-QPa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1j0-f2-jH2" secondAttribute="trailing" constant="87" id="1ey-6v-e77"/>
                             <constraint firstItem="Bsy-KD-MfO" firstAttribute="top" secondItem="1j0-f2-jH2" secondAttribute="bottom" constant="57" id="G1Y-an-XC8"/>
                             <constraint firstItem="XZw-oP-co5" firstAttribute="top" secondItem="Bsy-KD-MfO" secondAttribute="bottom" constant="210" id="SL3-F1-JNa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XZw-oP-co5" secondAttribute="trailing" constant="20" id="Vdi-r8-dhW"/>
                             <constraint firstItem="Bsy-KD-MfO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="Vsu-gw-l5p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XZw-oP-co5" secondAttribute="trailing" constant="87" id="dTo-St-42t"/>
+                            <constraint firstItem="XZw-oP-co5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="iAt-75-eE2"/>
                             <constraint firstItem="XZw-oP-co5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="k6t-Aq-Qa2"/>
                             <constraint firstItem="1j0-f2-jH2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="rL3-a2-EwD"/>
                             <constraint firstItem="1j0-f2-jH2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="v99-F8-OJv"/>
