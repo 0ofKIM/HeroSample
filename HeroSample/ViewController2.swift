@@ -16,9 +16,7 @@ class ViewController2: UIViewController {
     
     @IBAction func tapAction(_ sender: Any) {
         self.whiteView.hero.modifiers = [.translate(y:100)]
-        let webPage = self.storyboard?.instantiateViewController(withIdentifier: "ViewController")
-        self.present(webPage!, animated: true, completion: nil)
-//        self.show(webPage!,sender: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
@@ -40,12 +38,5 @@ class ViewController2: UIViewController {
         blackView.hero.id = "batMan"
         whiteView.hero.id = "whiteMan"
     }
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
 
 }
