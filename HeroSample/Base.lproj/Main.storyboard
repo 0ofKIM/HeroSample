@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kix-EA-sT0">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,125 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Main Menu View Controller-->
+        <scene sceneID="KgL-3i-t5p">
+            <objects>
+                <viewController storyboardIdentifier="MainMenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kix-EA-sT0" customClass="MainMenuViewController" customModule="HeroSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oQ5-og-7Aa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRN-N7-y83">
+                                <rect key="frame" x="163" y="117" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hero Sample"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="m0Y-ww-c0q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3j-pe-c1J">
+                                <rect key="frame" x="164" y="177" width="87" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="App Store UI"/>
+                                <connections>
+                                    <segue destination="v64-iu-22b" kind="presentation" id="L6i-Ap-fRA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="u5f-gM-edg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cp8-1w-oaI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-893" y="139"/>
+        </scene>
+        <!--App Store View Controller-->
+        <scene sceneID="D9d-wx-bjd">
+            <objects>
+                <viewController storyboardIdentifier="AppStoreViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="v64-iu-22b" customClass="AppStoreViewController" customModule="HeroSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SIa-e2-LvR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Unsplash1" translatesAutoresizingMaskIntoConstraints="NO" id="WtS-sQ-cFz">
+                                <rect key="frame" x="57" y="146" width="300" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eyt-ae-OXL" appends="YES" id="gfh-sU-FHQ"/>
+                                </connections>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aTo-RX-SH5">
+                                <rect key="frame" x="57" y="354" width="300" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oXN-zy-YxC"/>
+                    </view>
+                    <connections>
+                        <outlet property="beforeImage" destination="WtS-sQ-cFz" id="0ci-0q-1dt"/>
+                        <outlet property="beforeText" destination="aTo-RX-SH5" id="DDI-DM-8DK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s1I-ME-3Q8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="eyt-ae-OXL">
+                    <connections>
+                        <action selector="tapAction:" destination="v64-iu-22b" id="8bL-iU-Bxr"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="179.71014492753625" y="403.79464285714283"/>
+        </scene>
+        <!--App Store Detail View Controller-->
+        <scene sceneID="JLL-rd-S36">
+            <objects>
+                <viewController storyboardIdentifier="AppStoreDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ugR-Vr-sTd" customClass="AppStoreDetailViewController" customModule="HeroSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cRn-1h-aOv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Unsplash1" translatesAutoresizingMaskIntoConstraints="NO" id="T85-dj-3Ww">
+                                <rect key="frame" x="20" y="44" width="374" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="HBI-Dk-6wL" appends="YES" id="wNk-Ke-u1N"/>
+                                </connections>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="o5s-MM-ELA">
+                                <rect key="frame" x="20" y="352" width="374" height="350.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ZmN-yV-YgI"/>
+                    </view>
+                    <connections>
+                        <outlet property="afterImage" destination="T85-dj-3Ww" id="OLZ-dp-2zz"/>
+                        <outlet property="afterText" destination="o5s-MM-ELA" id="8br-xI-Pzt"/>
+                        <outlet property="swipe" destination="HBI-Dk-6wL" id="fX9-Dd-1QI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7L2-IB-y9p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="HBI-Dk-6wL">
+                    <connections>
+                        <action selector="swipeAction:" destination="ugR-Vr-sTd" id="kw9-jX-tVe"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1069.5652173913045" y="403.79464285714283"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -44,6 +163,7 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1j0-f2-jH2" secondAttribute="trailing" constant="87" id="1ey-6v-e77"/>
                             <constraint firstItem="Bsy-KD-MfO" firstAttribute="top" secondItem="1j0-f2-jH2" secondAttribute="bottom" constant="57" id="G1Y-an-XC8"/>
@@ -57,6 +177,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bsy-KD-MfO" secondAttribute="trailing" constant="87" id="yfi-Ou-yRw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="UeQ-ao-sAc" appends="YES" id="c0K-PK-tnD"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="blackView" destination="1j0-f2-jH2" id="AUh-Sr-kaY"/>
@@ -70,8 +193,13 @@
                         <action selector="tapAction:" destination="BYZ-38-t0r" id="rEM-q0-oHi"/>
                     </connections>
                 </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="UeQ-ao-sAc">
+                    <connections>
+                        <action selector="swipeAction:" destination="BYZ-38-t0r" id="QKf-Hc-kIz"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="49.275362318840585" y="138.61607142857142"/>
+            <point key="canvasLocation" x="181" y="-266"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="JGJ-zv-dZl">
@@ -135,7 +263,10 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="937.68115942028987" y="138.61607142857142"/>
+            <point key="canvasLocation" x="1070" y="-266"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Unsplash1" width="1024" height="1024"/>
+    </resources>
 </document>

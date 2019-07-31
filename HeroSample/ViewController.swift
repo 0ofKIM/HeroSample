@@ -20,7 +20,11 @@ class ViewController: UIViewController {
         self.present(webPage!, animated: true, completion: nil)
 //        self.show(webPage!, sender: nil)
     }
-    
+    @IBAction func swipeAction(_ sender: Any) {
+        let webPage = self.storyboard?.instantiateViewController(withIdentifier: "MainMenuViewController")
+        self.present(webPage!, animated: false, completion: nil)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -28,6 +32,7 @@ class ViewController: UIViewController {
         blackView.layer.cornerRadius = 10
         blackView.layer.borderWidth = 2
         blackView.layer.borderColor = UIColor.darkGray.cgColor
+
         redView.layer.cornerRadius = 10
         redView.layer.borderWidth = 2
         redView.layer.borderColor = UIColor.red.cgColor
