@@ -29,7 +29,10 @@ class AppStoreDetailViewController: UIViewController {
         afterText.hero.id = "text"
 
         swipe.direction = .down
-        // Do any additional setup after loading the view.
     }
-    
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+
 }
