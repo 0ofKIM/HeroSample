@@ -24,7 +24,7 @@ class AppStoreDetailViewController: UIViewController {
         self.hero.isEnabled = true
         
         afterImage.hero.id = "image"
-        afterImage.hero.modifiers = [.useNoSnapshot, .forceAnimate, .spring(stiffness: 250, damping: 15)]
+        afterImage.hero.modifiers = [.spring(stiffness: 250, damping: 15)]
 
         afterText.hero.id = "text"
 
