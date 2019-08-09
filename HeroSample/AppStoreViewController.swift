@@ -24,11 +24,9 @@ class AppStoreViewController: UIViewController {
         self.hero.isEnabled = true
 
         beforeImage.hero.id = "image"
-        beforeImage.hero.modifiers = [.spring(stiffness: 250, damping: 80)]
+        beforeImage.hero.modifiers = [.spring(stiffness: 250, damping: 1)]
 
         beforeText.hero.id = "text"
-
-        // Do any additional setup after loading the view.
     }
 
 }

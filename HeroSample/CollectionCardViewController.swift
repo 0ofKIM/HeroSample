@@ -17,6 +17,8 @@ class CollectionCardViewController: UIViewController {
 
         collectionView.delegate = self
         collectionView.dataSource = self
+
+        self.hero.isEnabled = true
     }
 
 }
@@ -30,26 +32,20 @@ extension CollectionCardViewController: UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath as IndexPath) as! CardCollectionViewCell
         cell.foodImage.image = UIImage(named: "Unsplash\(indexPath.row)")
-
         cell.foodImage.layer.cornerRadius = 10
-//        cell.foodImage.layer.borderWidth = 2
         cell.foodImage.layer.borderColor = UIColor.darkGray.cgColor
+
+        cell.foodImage.hero.id = "foodimage\(indexPath.row)"
 
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let storyBoard = UIStoryboard(name: "Main", bundle: nil) // 스토리보드 가져오기
-//        let vc = storyBoard.instantiateViewController(withIdentifier: "CollectionCardDetailViewController") as! CollectionCardDetailViewController // 캐스팅
-
         guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "CollectionCardDetailViewController") as? CollectionCardDetailViewController else {
             return
         }
         vc.imageNumber = indexPath.row
         self.present(vc, animated:  true, completion: nil)
-
-//        let webPage = self.storyboard?.instantiateViewController(withIdentifier: "CollectionCardDetailViewController")
-//        self.present(webPage!, animated: true, completion: nil)
     }
 
 }
