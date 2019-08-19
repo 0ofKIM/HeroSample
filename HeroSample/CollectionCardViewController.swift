@@ -35,12 +35,13 @@ extension CollectionCardViewController: UICollectionViewDelegate, UICollectionVi
         cell.foodImage.layer.cornerRadius = 10
         cell.foodImage.layer.borderColor = UIColor.darkGray.cgColor
 
-        cell.foodImage.hero.id = "foodimage\(indexPath.row)"
-
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! CardCollectionViewCell
+        cell.foodImage.hero.id = "foodimage\(indexPath.row)"
+
         guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "CollectionCardDetailViewController") as? CollectionCardDetailViewController else {
             return
         }
