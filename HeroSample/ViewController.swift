@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBAction func tapAction(_ sender: Any) {
         let webPage = self.storyboard?.instantiateViewController(withIdentifier: "ViewController2")
         self.present(webPage!, animated: true, completion: nil)
+        webPage?.modalPresentationStyle = .fullScreen
 //        self.show(webPage!, sender: nil)
     }
     @IBAction func swipeAction(_ sender: Any) {

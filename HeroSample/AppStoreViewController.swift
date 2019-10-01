@@ -15,6 +15,7 @@ class AppStoreViewController: UIViewController {
     
     @IBAction func tapAction(_ sender: Any) {
         let webPage = self.storyboard?.instantiateViewController(withIdentifier: "AppStoreDetailViewController")
+        webPage?.modalPresentationStyle = .fullScreen
         self.present(webPage!, animated: true, completion: nil)
     }
 

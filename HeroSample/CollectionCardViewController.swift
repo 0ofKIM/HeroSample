@@ -31,6 +31,7 @@ extension CollectionCardViewController: UICollectionViewDelegate, UICollectionVi
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath as IndexPath) as! CardCollectionViewCell
+
         cell.foodImage.image = UIImage(named: "Unsplash\(indexPath.row)")
         cell.foodImage.layer.cornerRadius = 10
         cell.foodImage.layer.borderColor = UIColor.darkGray.cgColor
@@ -45,7 +46,10 @@ extension CollectionCardViewController: UICollectionViewDelegate, UICollectionVi
         guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "CollectionCardDetailViewController") as? CollectionCardDetailViewController else {
             return
         }
+
+        vc.modalPresentationStyle = .fullScreen
         vc.imageNumber = indexPath.row
+
         self.present(vc, animated:  true, completion: nil)
     }
 
