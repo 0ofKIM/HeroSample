@@ -14,6 +14,12 @@ class AppStoreDetailViewController: UIViewController {
     @IBOutlet var afterText: UITextView!
     @IBOutlet var swipe: UISwipeGestureRecognizer!
 
+    @IBAction func tapAction(_ sender: Any) {
+        let webPage = self.storyboard?.instantiateViewController(withIdentifier: "ImageZoomViewController")
+        webPage?.modalPresentationStyle = .fullScreen
+        self.present(webPage!, animated: true, completion: nil)
+    }
+
     @IBAction func swipeAction(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

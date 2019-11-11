@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4CCD571F3414EC3505683E75 /* Pods_HeroSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D62FCC05FB57A4E198FEEB9 /* Pods_HeroSample.framework */; };
+		FB5073A82378EB8400276802 /* ImageZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5073A72378EB8400276802 /* ImageZoomViewController.swift */; };
 		FB76B9B722FA898B00E390AB /* CollectionCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB76B9B622FA898B00E390AB /* CollectionCardViewController.swift */; };
 		FB76B9B922FA8A4300E390AB /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB76B9B822FA8A4300E390AB /* CardCollectionViewCell.swift */; };
 		FB76B9BB22FAC76100E390AB /* CollectionCardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB76B9BA22FAC76100E390AB /* CollectionCardDetailViewController.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		337EF5FB2B102F917BE3359F /* Pods-HeroSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroSample.debug.xcconfig"; path = "Target Support Files/Pods-HeroSample/Pods-HeroSample.debug.xcconfig"; sourceTree = "<group>"; };
 		6D62FCC05FB57A4E198FEEB9 /* Pods_HeroSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeroSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB5073A72378EB8400276802 /* ImageZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoomViewController.swift; sourceTree = "<group>"; };
 		FB76B9B622FA898B00E390AB /* CollectionCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCardViewController.swift; sourceTree = "<group>"; };
 		FB76B9B822FA8A4300E390AB /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		FB76B9BA22FAC76100E390AB /* CollectionCardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCardDetailViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				FB85355D22EACF4D00ADD2C4 /* ViewController2.swift */,
 				FBD96D9022F0038600C97723 /* AppStoreViewController.swift */,
 				FBD96D9222F003AE00C97723 /* AppStoreDetailViewController.swift */,
+				FB5073A72378EB8400276802 /* ImageZoomViewController.swift */,
 				FB76B9B622FA898B00E390AB /* CollectionCardViewController.swift */,
 				FB76B9B822FA8A4300E390AB /* CardCollectionViewCell.swift */,
 				FB76B9BA22FAC76100E390AB /* CollectionCardDetailViewController.swift */,
@@ -231,6 +234,7 @@
 				FB76B9B722FA898B00E390AB /* CollectionCardViewController.swift in Sources */,
 				FBD96D9322F003AE00C97723 /* AppStoreDetailViewController.swift in Sources */,
 				FBD96D9122F0038600C97723 /* AppStoreViewController.swift in Sources */,
+				FB5073A82378EB8400276802 /* ImageZoomViewController.swift in Sources */,
 				FB85355E22EACF4D00ADD2C4 /* ViewController2.swift in Sources */,
 				FB76B9BB22FAC76100E390AB /* CollectionCardDetailViewController.swift in Sources */,
 			);
