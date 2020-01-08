@@ -17,9 +17,12 @@ class ViewController: UIViewController {
     
     @IBAction func tapAction(_ sender: Any) {
         let webPage = self.storyboard?.instantiateViewController(withIdentifier: "ViewController2")
-        webPage?.modalPresentationStyle = .fullScreen
-        self.present(webPage!, animated: true, completion: nil)
 //        webPage?.modalPresentationStyle = .fullScreen
+//        self.present(webPage!, animated: true, completion: nil)
+        self.navigationController?.hero.isEnabled = true
+        self.navigationController?.hero.navigationAnimationType = .fade
+        self.navigationController?.pushViewController(webPage!, animated: true)
+
 //        self.show(webPage!, sender: nil)
     }
     @IBAction func swipeAction(_ sender: Any) {

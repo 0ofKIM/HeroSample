@@ -16,7 +16,10 @@ class ViewController2: UIViewController {
     
     @IBAction func tapAction(_ sender: Any) {
         self.whiteView.hero.modifiers = [.translate(y:100)]
-        dismiss(animated: true, completion: nil)
+//        dismiss(animated: true, completion: nil)
+        self.navigationController?.hero.isEnabled = true
+        self.navigationController?.hero.navigationAnimationType = .fade
+        self.navigationController?.popViewController(animated: true)
     }
     
     override func viewDidLoad() {
